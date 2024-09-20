@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải phương trình bậc nhất</title>
+</head>
+<style>
+    body {text-align: center;}
+</style>
+<body>
+    <h3> Giải phương trình bậc nhất: ax + b = 0 </h3>
+    <p> 
+        <input type="text" id="txta" size="8">&nbsp; <i>x</i> &nbsp; + &nbsp;
+        <input type="text" id="txtb" size="8">&nbsp;
+        <input type="button" value=" = " onclick="Giai()">&nbsp;
+        <input type="text" id="txtc" size="25">&nbsp; 
+    </p>
+    <script> 
+    function Giai(){
+        var a=parseFloat(document.getElementById("txta").value);
+        var b=parseFloat(document.getElementById("txtb").value);
+        if (a==0 && b!==0){
+            document.getElementById("txtc").value="Phương trình vô nghiệm";}
+        else if (a==0 && b==0){
+            document.getElementById("txtc").value="Phương trình vô số nghiệm";}
+        else {
+            document.getElementById("txtc").value=-b/a;
+            }
+        }
+    </script>
+</body>
+</html>
