@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các phép toán</title>
+    <script>
+        function Cong()
+    {
+        var a=parseFloat(document.getElementById("txta").value);
+        var b=parseFloat(document.getElementById("txtb").value);
+        document.getElementById("txtc").value=a+b;
+    }
+    function Tru()
+    {
+        var a1=parseFloat(document.getElementById("txta1").value);
+        var b1=parseFloat(document.getElementById("txtb1").value);
+        document.getElementById("txtc1").value=a1-b1;
+    }
+    function Tich()
+    {
+        var a2=parseFloat(document.getElementById("txta2").value);
+        var b2=parseFloat(document.getElementById("txtb2").value);
+        document.getElementById("txtc2").value=a2*b2;
+    }
+    function Thuong()
+    {
+        var a3=parseFloat(document.getElementById("txta3").value);
+        var b3=parseFloat(document.getElementById("txtb3").value);
+        document.getElementById("txtc3").value=a3/b3;
+    }
+    </script>
+    
+</head>
+<body>
+    <h3 style="text-align: center;">Thực hiện 4 phép toán</h3>
+    <p> Phép cộng: 
+        <input type="text" id="txta" size="20">&nbsp; + &nbsp;
+        <input type="text" id="txtb" size="20">&nbsp;
+        <input type="button" value=" = " onclick="Cong()">&nbsp
+        <input type="text" id="txtc" size="20">&nbsp; 
+    </p>
+    <p> Phép trừ: 
+        <input type="text" id="txta1" size="20">&nbsp; - &nbsp;
+        <input type="text" id="txtb1" size="20">&nbsp;
+        <input type="button" value=" = " onclick="Tru()">&nbsp
+        <input type="text" id="txtc1" size="20">&nbsp; 
+    </p> 
+    <p> Tích: 
+        <input type="text" id="txta2" size="20">&nbsp; x &nbsp;
+        <input type="text" id="txtb2" size="20">&nbsp;
+        <input type="button" value=" = " onclick="Tich()">&nbsp
+        <input type="text" id="txtc2" size="20">&nbsp; 
+    </p> 
+    <p> Tích: 
+        <input type="text" id="txta3" size="20">&nbsp; : &nbsp;
+        <input type="text" id="txtb3" size="20">&nbsp;
+        <input type="button" value=" = " onclick="Thuong()">&nbsp
+        <input type="text" id="txtc3" size="20">&nbsp; 
+    </p> 
+
+
+
+</body>
+</html>
+
